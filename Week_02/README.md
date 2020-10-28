@@ -25,3 +25,24 @@ CMS收集器：
 G1收集器：
 可以看出G1收集器使用的也是并发、STW的收集算法，并且相比于上面的三种，它的吞吐量最高，GC时间最短，用户线程停顿时间也最小。
 
+## 作业二：使用压测工具（wrk或sb），演练gateway-server-0.0.1-SNAPSHOT.jar 示例
+
+wrk:
+
+```text
+~ % wrk -c 40 -d 30s http://127.0.0.1:8088/api/hello
+Running 30s test @ http://127.0.0.1:8088/api/hello
+  2 threads and 40 connections
+  Thread Stats   Avg      Stdev     Max   +/- Stdev
+    Latency     1.81ms    8.92ms 179.54ms   97.02%
+    Req/Sec    33.81k    10.60k   49.24k    79.13%
+  1628600 requests in 30.07s, 194.44MB read
+Requests/sec:  54153.34
+Transfer/sec:      6.47MB
+```
+
+## 作业三：运行课上的例子，以及 Netty 的例子，分析相关现象
+
+## 作业四：写一段代码，使用 HttpClient 或 OkHttp 访问http://localhost:8801，代码提交到Github。
+
+代码示例：[HttpClientDemo]()
