@@ -48,4 +48,4 @@ Transfer/sec:      6.47MB
 
 ## 作业四：写一段代码，使用 HttpClient 或 OkHttp 访问http://localhost:8801，代码提交到Github。
 
-代码示例：[HttpClientDemo]()
+代码示例：[HttpClientDemo](https://github.com/wkk1994/JAVA-000/blob/main/nio-code/src/main/java/com/wkk/lean/java/nio/HttpClientDemo.java)
