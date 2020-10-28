@@ -1,4 +1,4 @@
-package com.wkk.demo.jvm.task;
+package com.wkk.lean.java.jvm.task;
 
 import java.io.*;
 import java.lang.reflect.InvocationTargetException;

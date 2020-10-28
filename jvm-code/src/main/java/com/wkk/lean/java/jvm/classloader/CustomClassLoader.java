@@ -1,6 +1,4 @@
-package com.wkk.demo.jvm.classloader;
-
-import com.sun.deploy.util.StringUtils;
+package com.wkk.lean.java.jvm.classloader;
 
 import java.io.*;
 import java.util.Base64;

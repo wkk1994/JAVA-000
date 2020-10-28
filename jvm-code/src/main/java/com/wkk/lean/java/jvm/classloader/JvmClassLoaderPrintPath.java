@@ -1,4 +1,4 @@
-package com.wkk.demo.jvm.classloader;
+package com.wkk.lean.java.jvm.classloader;
 
 import sun.misc.Launcher;
 

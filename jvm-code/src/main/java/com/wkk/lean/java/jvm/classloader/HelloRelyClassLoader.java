@@ -1,4 +1,4 @@
-package com.wkk.demo.jvm.classloader;
+package com.wkk.lean.java.jvm.classloader;
 
 /**
  * @Description hello依赖的class
