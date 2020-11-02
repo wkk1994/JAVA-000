@@ -30,7 +30,7 @@ public class HttpClientDemo {
      */
     public static void getHelloByClient() {
         try {
-            URL url = new URL("http://127.0.0.1:8801");
+            URL url = new URL("http://47.98.190.67:8802");
             HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
             httpURLConnection.setRequestMethod("GET");
             httpURLConnection.setConnectTimeout(15 * 1000);
@@ -63,7 +63,7 @@ public class HttpClientDemo {
     }
 
     public static void getHelloByHttpClient() {
-        HttpGet request = new HttpGet("http://127.0.0.1:8801");
+        HttpGet request = new HttpGet("http://47.98.190.67:8802");
         CloseableHttpClient httpClient = HttpClientBuilder
                 .create().setDefaultCookieStore(new BasicCookieStore()).build();
         try {

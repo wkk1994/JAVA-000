@@ -24,6 +24,8 @@ public class HttpServerDemo1 {
 
     public static void service(Socket socket) {
         try {
+            System.out.println(socket.getLocalPort());
+            System.out.println(socket.getLocalAddress());
             Thread.sleep(20);
             OutputStream outputStream = socket.getOutputStream();
             PrintWriter printWriter = new PrintWriter(outputStream, true);
@@ -33,7 +35,6 @@ public class HttpServerDemo1 {
             printWriter.println();
             printWriter.write("hello nio");
             printWriter.close();
-            socket.close();
         } catch (InterruptedException | IOException e) {
             e.printStackTrace();
         } finally {

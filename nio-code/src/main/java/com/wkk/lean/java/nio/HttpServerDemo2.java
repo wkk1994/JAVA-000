@@ -25,12 +25,13 @@ public class HttpServerDemo2 {
         try {
             Thread.sleep(20);
             OutputStream outputStream = socket.getOutputStream();
-            PrintWriter printWriter = new PrintWriter(outputStream, true);
+            PrintWriter printWriter = new PrintWriter(socket.getOutputStream(), true);
             printWriter.println("HTTP/1.1 200 OK");
-            printWriter.println("Content-Length: 9");
-            printWriter.println("Content-Type: text/html; charset=utf-8");
+            printWriter.println("Content-Type:text/html;charset=utf-8");
+            String body = "hello,nio";
+            printWriter.println("Content-Length:" + body.getBytes().length);
             printWriter.println();
-            printWriter.write("hello nio");
+            printWriter.write(body);
             printWriter.close();
             socket.close();
         } catch (InterruptedException | IOException e) {
