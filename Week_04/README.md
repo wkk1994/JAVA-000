@@ -15,7 +15,7 @@
   代码：[ModeFour](../thread-code/src/main/java/com/wkk/lean/java/thread/homework/ModeFour.java)
 
 * 方式五：通过CompletableFuture实现线程调用并获取处理结果
-  代码：[ModeFour](../thread-code/src/main/java/com/wkk/lean/java/thread/homework/ModeFive.java)
+  代码：[ModeFive](../thread-code/src/main/java/com/wkk/lean/java/thread/homework/ModeFive.java)
 
 ## 作业六：把多线程和并发相关知识带你梳理一遍，画一个脑图，截图上传到 Github 上。
 
