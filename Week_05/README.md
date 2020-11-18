@@ -11,30 +11,30 @@ Jdk动态代理只能代理实现了接口的类。
 ### 2.（必做）写代码实现 Spring Bean 的装配，方式越多越好（XML、Annotation 都可以）, 提交到 Github。
 
 * 1.通过xml文件配置的方式实现bean装配
-  [XmlInjectionDemo.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work02/XmlInjectionDemo.java)
+  [XmlInjectionDemo.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work02/XmlInjectionDemo.java)
   [xmlInjectionApplicationContext.xml](../spring-demo/src/main/resources/xmlInjectionApplicationContext.xml)
 
 * 2.通过注解的方式实现bean装配
-  [AnnotationInjectionDemo.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work02/AnnotationInjectionDemo.java)
+  [AnnotationInjectionDemo.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work02/AnnotationInjectionDemo.java)
 
 * 3.通过自动配置的方式实现bean装配
-  [AutowireInjectDemo.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work02/AutowireInjectDemo.java)
+  [AutowireInjectDemo.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work02/AutowireInjectDemo.java)
   [xmlInjectionApplicationContext.xml](../spring-demo/src/main/resources/xmlInjectionApplicationContext.xml)
 
 * 4.通过BeanFactoryAware的方式实现bean装配
-  [AwareInjectDemo.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work02/AwareInjectDemo.java)
+  [AwareInjectDemo.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work02/AwareInjectDemo.java)
   [beanFactoryInjectionApplicationContext.xml](../spring-demo/src/main/resources/beanFactoryInjectionApplicationContext.xml)
 
 * 5.通过API的方式实现bean装配
-  [ApiInjectionDemo.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work02/ApiInjectionDemo.java)
+  [ApiInjectionDemo.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work02/ApiInjectionDemo.java)
 
 ### 3.（选做）实现一个 Spring XML 自定义配置，配置一组 Bean，例如：Student/Klass/School。
 
-* 设置xsd文件 [StudentHandler.java](../spring-demo/src/main/resources/META-INF/namespace/student.xsd)
+* 设置xsd文件 [student.xsd](../spring-demo/src/main/resources/META-INF/namespace/student.xsd)
 
 * 添加handler和xml解析类
 
-  [StudentHandler.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work03/handler/StudentHandler.java)  [KlassParser.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work03/parser/KlassParser.java)  [StudentParser.java](../spring-demo/src/main/javacom/wkk/lean/java/springdemo/work03/parser/StudentParser.java)
+  [StudentHandler.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work03/handler/StudentHandler.java)  [KlassParser.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work03/parser/KlassParser.java)  [StudentParser.java](../spring-demo/src/main/java/com/wkk/lean/java/springdemo/work03/parser/StudentParser.java)
 
 * 配置spring.handlers，spring.schemas
 
