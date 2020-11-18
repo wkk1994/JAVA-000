@@ -1,0 +1,12 @@
+{
+  "properties": [
+    {
+      "name": "custom.student.id",
+      "type": "java.lang.Integer"
+    },
+    {
+      "name": "custom.student.name",
+      "type": "java.lang.String"
+    }
+  ]
+}

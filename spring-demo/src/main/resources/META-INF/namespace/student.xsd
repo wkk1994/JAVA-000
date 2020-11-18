@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://wkk.im/schema/student"
+       xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+       targetNamespace="http://wkk.im/schema/student">
+
+    <xsd:complexType name="Student">
+        <xsd:attribute name="id" type="xsd:string" use="required"/>
+        <xsd:attribute name="_id" type="xsd:int" use="required"/>
+        <xsd:attribute name="name" type="xsd:string" use="required"/>
+    </xsd:complexType>
+
+    <xsd:element name="student" type="Student" />
+
+    <xsd:element name="klass">
+        <xsd:complexType>
+            <xsd:attribute name="id"  type="xsd:string" use="required"/>
+            <xsd:attribute name="students" type="StudentList"/>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:simpleType name="StudentList">
+        <xsd:list itemType="xsd:string"/>
+    </xsd:simpleType>
+</xsd:schema>

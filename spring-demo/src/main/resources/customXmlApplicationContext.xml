@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:custom="http://wkk.im/schema/student"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://wkk.im/schema/student
+       http://wkk.im/schema/student/student.xsd
+       ">
+
+    <bean id="student1" class="com.wkk.lean.java.springdemo.work03.entity.Student" primary="true">
+        <property name="id" value="111"></property>
+        <property name="name" value="111"></property>
+    </bean>
+
+    <bean id="zlass" class="com.wkk.lean.java.springdemo.work03.entity.Klass" primary="true">
+        <property name="students">
+            <list>
+                <ref bean="student1"/>
+            </list>
+        </property>
+    </bean>
+    <custom:student name="自定义xml11" _id="111" id="student11"/>
+    <custom:student name="自定义xml22" _id="222" id="student22"/>
+    <custom:klass students="student11,student22" id="klass"></custom:klass>
+
+</beans>

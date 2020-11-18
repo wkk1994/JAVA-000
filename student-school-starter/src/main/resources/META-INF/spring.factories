@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.wkk.lean.java.studentschoolstarter.entity.StudentSchoolAutoConfiguration
