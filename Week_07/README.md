@@ -5,13 +5,13 @@
 ### 2.（必做）按自己设计的表结构，插入 100 万订单模拟数据，测试不同方式的插入效率 
 
 * 使用jdbc拼接inser into的方式实现批量插入，用时23s。
-  [JDBCBatchInsertDemo.java]()
+  [JDBCBatchInsertDemo.java](https://github.com/wkk1994/JAVA-000/blob/main/batch-insert-demo/src/main/java/com/wkk/lean/java/batch/insert/demo/JDBCBatchInsertDemo.java)
 
 * 使用PreparedStatement#addBatch的方式实现批量插入，用时1640s（27分钟）。
-  [PreparedStatementBatchInsertDemo.java]()
+  [PreparedStatementBatchInsertDemo.java](https://github.com/wkk1994/JAVA-000/blob/main/batch-insert-demo/src/main/java/com/wkk/lean/java/batch/insert/demo/PreparedStatementBatchInsertDemo.java)
 
 * 使用jdbcTemplate#batchUpdate的方式实现批量插入，用时1478s（25分钟）
-  [JdbcTemplateBatchInsertDemo.java]()
+  [JdbcTemplateBatchInsertDemo.java](https://github.com/wkk1994/JAVA-000/blob/main/batch-insert-demo/src/main/java/com/wkk/lean/java/batch/insert/demo/JdbcTemplateBatchInsertDemo.java)
 
 ## Week07 作业题目（周六）
 
@@ -203,20 +203,20 @@
 
 * 配置多个数据源，根据操作的不同选择不同的数据源。
   实现方式：通过定义多个jdbcTemplate实现多数据源操作，读操作使用slaveJdbcTemplate,写操作使用masterJdbcTemplate。
-  主要代码：[MultiDataSourceDemo.java]() [UserInfoDao.java]()
+  主要代码：[MultiDataSourceDemo.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.1/src/main/java/com/wkk/lean/java/dynamic/data/source/MultiDataSourceDemo.java) [UserInfoDao.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.1/src/main/java/com/wkk/lean/java/dynamic/data/source/dao/UserInfoDao.java)
 
 * 基于AbstractRoutingDataSource和自定义注解简化数据源切换
-  主要代码：[DynamicDataSource.java]() [DynamicDataSourceConfig.java]() [DataSourceAspect.java]()
+  主要代码：[DynamicDataSource.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.2/src/main/java/com/wkk/lean/java/dynamic/data/source/config/DynamicDataSource.java) [DynamicDataSourceConfig.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.2/src/main/java/com/wkk/lean/java/dynamic/data/source/config/DynamicDataSourceConfig.java) [DataSourceAspect.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.2/src/main/java/com/wkk/lean/java/dynamic/data/source/aspect/DataSourceAspect.java)
 
 * 改进二下1.2：支持配置多个从库，并使用随机算法获取从库
-  主要代码：[DynamicDataSource.java]() [SlaveDataSource.java]() [DynamicDataSourceConfig.java]() [DataSourceAspect.java]()
+  主要代码：[DynamicDataSource.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.3/src/main/java/com/wkk/lean/java/dynamic/data/source/config/DynamicDataSource.java) [SlaveDataSource.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.3/src/main/java/com/wkk/lean/java/dynamic/data/source/config/SlaveDataSource.java) [DynamicDataSourceConfig.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.3/src/main/java/com/wkk/lean/java/dynamic/data/source/config/DynamicDataSourceConfig.java) [DataSourceAspect.java](https://github.com/wkk1994/JAVA-000/blob/main/dynamic-data-source1.3/src/main/java/com/wkk/lean/java/dynamic/data/source/aspect/DataSourceAspect.java)
 
 * 改进三下1.3：支持多个从库的负载均衡
   未实现。。。
 
 ### 3.（必做）读写分离 - 数据库框架版本 2.0
   通过shardingsphere-jdbc方式实现多数据源动态切换.
-  
+  代码位置：[dynamic-data-source-shardingsphere](https://github.com/wkk1994/JAVA-000/tree/main/dynamic-data-source-shardingsphere)
   依赖版本：
   
   ```xml
