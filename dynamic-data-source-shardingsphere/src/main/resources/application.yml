@@ -1,0 +1,46 @@
+spring:
+  shardingsphere:
+    datasource:
+      common:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+      names: master1,slave1,slave2
+      master1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3309/test?characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: root!@#
+      slave1:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3308/test?characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: root!@#
+      slave2:
+        type: com.zaxxer.hikari.HikariDataSource
+        driver-class-name: com.mysql.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3310/test?characterEncoding=UTF-8&useSSL=false
+        username: root
+        password: root!@#
+    rules:
+      replica-query:
+        data-sources:
+          ds_ms:
+            name: ds_ms
+            primary-data-source-name: master1
+            replica-data-source-names: slave1,slave2
+            load-balancer-name: round
+        load-balancers:
+          round:
+            type: ROUND_ROBIN
+            props:
+              test: test
+
+
+    #4.1版本使用配置
+    #masterslave:
+    #  load-balance-algorithm-type: round_robin
+    #  name: ds_ms
+    #  master-data-source-name: master1
+    #  slave-data-source-names: slave1,slave2

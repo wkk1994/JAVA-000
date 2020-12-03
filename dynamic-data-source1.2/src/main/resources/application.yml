@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    master:
+      url: jdbc:mysql://127.0.0.1:3309/test?characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: root!@#
+    slave:
+      url: jdbc:mysql://127.0.0.1:3310/test?characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: root!@#
