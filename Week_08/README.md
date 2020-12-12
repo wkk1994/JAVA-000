@@ -4,7 +4,7 @@
 
 ### 2、（必做）设计对前面的订单表数据进行水平分库分表，拆分2个库，每个库16张表。 并在新结构在演示常见的增删改查操作。代码、sql和配置文件，上传到github。
 
-主要代码：[application.yml](https://github.com/wkk1994/JAVA-000/blob/main/sharding-crud-shardingsphere-jdbc/src/main/resources/application.yml) [OrderInfoDao.java](https://github.com/wkk1994/JAVA-000/blob/main/sharding-crud-shardingsphere-jdbc/src/main/java/com/wkk/lean/java/dynamic/data/source/dao/OrderInfoDao.java)
+主要代码：[application.yml](https://github.com/wkk1994/JAVA-000/blob/main/sharding-crud-shardingsphere-jdbc/src/main/resources/application.yml) [OrderInfoDao.java](https://github.com/wkk1994/JAVA-000/blob/main/sharding-crud-shardingsphere-jdbc/src/main/java/com/wkk/learn/java/dynamic/data/source/dao/OrderInfoDao.java)
 
 ### 3、（选做）模拟1000万的订单单表数据，迁移到上面作业2的分库分表中。
 

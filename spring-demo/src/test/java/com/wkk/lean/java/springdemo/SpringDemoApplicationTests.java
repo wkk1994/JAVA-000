@@ -1,4 +1,4 @@
-package com.wkk.lean.java.springdemo;
+package com.wkk.learn.java.springdemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

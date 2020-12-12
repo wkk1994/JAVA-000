@@ -7,12 +7,12 @@
        http://wkk.im/schema/student/student.xsd
        ">
 
-    <bean id="student1" class="com.wkk.lean.java.springdemo.work03.entity.Student" primary="true">
+    <bean id="student1" class="com.wkk.learn.java.springdemo.work03.entity.Student" primary="true">
         <property name="id" value="111"></property>
         <property name="name" value="111"></property>
     </bean>
 
-    <bean id="zlass" class="com.wkk.lean.java.springdemo.work03.entity.Klass" primary="true">
+    <bean id="zlass" class="com.wkk.learn.java.springdemo.work03.entity.Klass" primary="true">
         <property name="students">
             <list>
                 <ref bean="student1"/>

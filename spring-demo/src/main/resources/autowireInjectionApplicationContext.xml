@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="student" class="com.wkk.lean.java.springdemo.work02.entity.Student">
+    <bean id="student" class="com.wkk.learn.java.springdemo.work02.entity.Student">
         <property name="id" value="1001"/>
         <property name="name" value="hello"/>
     </bean>
 
-    <bean id="school" class="com.wkk.lean.java.springdemo.work02.entity.School" autowire="byName">
+    <bean id="school" class="com.wkk.learn.java.springdemo.work02.entity.School" autowire="byName">
     </bean>
 </beans>
