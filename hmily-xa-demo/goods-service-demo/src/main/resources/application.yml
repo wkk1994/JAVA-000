@@ -1,0 +1,31 @@
+server:
+  port: 8182
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xatest?characterEncoding=UTF-8&rewriteBatchedStatements=true&useSSL=false
+    username: root
+    password: root!@#
+    driver-class-name: com.mysql.jdbc.Driver
+    initialization-mode: always
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  dubbo:
+    application:
+      name: dubbo-callcenter
+    registry:
+      address: zookeeper://127.0.0.1:2181
+      protocol: zookeeper
+    protocol:
+      name: dubbo
+      port: 21882
+    server: true
+
+#hmily
+hmily:
+  support:
+    rpc:
+      annotation: true

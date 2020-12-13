@@ -95,3 +95,7 @@ curl -X POST \
 ## 第 16 课作业实践
 
 ### 2、（必做）基于hmily TCC或ShardingSphere的Atomikos XA实现一个简单的分布式 事务应用demo（二选一），提交到github。
+
+* 基于hmily实现分布式事务
+
+代码地址：[hmily-xa-demo](https://github.com/wkk1994/JAVA-000/blob/main/hmily-xa-demo)
