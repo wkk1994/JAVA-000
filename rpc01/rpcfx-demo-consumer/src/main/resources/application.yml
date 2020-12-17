@@ -1,0 +1,6 @@
+server:
+  port: 8191
+  
+  profiles:
+    active: true
+
