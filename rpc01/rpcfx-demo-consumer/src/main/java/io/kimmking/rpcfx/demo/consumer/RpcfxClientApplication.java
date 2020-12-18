@@ -46,7 +46,7 @@ public class RpcfxClientApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		User user = queryUserService.findById(1);
 		System.out.println("find user id=1 from server: " + user.getName());
-		user = queryUserService.findById1(1);
-		System.out.println("find user id=1 from server: " + user.getName());
+		/*user = queryUserService.findById1(1);
+		System.out.println("find user id=1 from server: " + user.getName());*/
 	}
 }

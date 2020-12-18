@@ -14,3 +14,6 @@
   [QueryUserService.java](https://github.com/wkk1994/JAVA-000/blob/main/rpc01/rpcfx-demo-consumer/src/main/java/io/kimmking/rpcfx/demo/consumer/QueryUserService.java)
   
 * 3）尝试使用Netty+HTTP作为client端传输方式
+
+  [NettyHttpClient.java](https://github.com/wkk1994/JAVA-000/blob/main/rpc01/rpcfx-core/src/main/java/io/kimmking/rpcfx/client/http/NettyHttpClient.java)
+  [NettyClientHandler.java](https://github.com/wkk1994/JAVA-000/blob/main/rpc01/rpcfx-core/src/main/java/io/kimmking/rpcfx/client/http/NettyClientHandler.java)
