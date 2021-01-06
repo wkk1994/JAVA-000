@@ -1,0 +1,7 @@
+spring:
+  redis:
+    #host: 47.98.190.67
+    #port: 36279
+    #password: admin123
+    host: 127.0.0.1
+    port: 6379
