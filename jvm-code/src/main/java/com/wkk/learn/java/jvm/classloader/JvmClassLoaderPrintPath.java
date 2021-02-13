@@ -27,8 +27,8 @@ public class JvmClassLoaderPrintPath {
         printClassLoader1("扩展类加载器", (URLClassLoader) JvmClassLoaderPrintPath.class.getClassLoader().getParent());
         // 启动类加载器
         System.out.println("启动类加载器");
-        printClassLoader("启动类加载器", JvmClassLoaderPrintPath.class.getClassLoader());
-        printClassLoader1("启动类加载器", (URLClassLoader) JvmClassLoaderPrintPath.class.getClassLoader());
+        printClassLoader("应用类加载器", JvmClassLoaderPrintPath.class.getClassLoader());
+        printClassLoader1("应用类加载器", (URLClassLoader) JvmClassLoaderPrintPath.class.getClassLoader());
 
     }
 
